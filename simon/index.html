@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>November</title>
+<meta property="og:title" content="November">
+<meta property="og:description" content="A calendar, for Madeline.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+:root{--u:clamp(3.3px,.93vw,7px)}
+body{font-family:var(--body);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
+.wrap{max-width:800px;margin:0 auto;padding:calc(var(--u)*9) 6px calc(var(--u)*10)}
+h1{font-family:var(--display);font-weight:500;font-size:calc(var(--u)*13);line-height:1;text-align:center}
+h1 small{font-size:.4em;font-style:normal;color:var(--muted);margin-left:.35em}
+.holder{position:relative;margin-top:calc(var(--u)*7)}
+.cal{position:relative;z-index:1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border:1.5px solid;border-radius:calc(var(--u)*3);overflow:hidden;background:var(--line);gap:1px}
+.dow{background:var(--cell);font-size:calc(var(--u)*2.9);font-weight:700;letter-spacing:.1em;text-align:center;padding:.7em 0;color:var(--muted)}
+.d{background:var(--cell);min-height:calc(var(--u)*27);padding:calc(var(--u)*1.4) 2px calc(var(--u)*1.6);display:flex;flex-direction:column;text-align:center;font-size:calc(var(--u)*3);line-height:1.2;font-weight:700;overflow:hidden}
+.n{font-family:var(--display);font-size:calc(var(--u)*4.2);font-weight:500;line-height:1;padding-left:calc(var(--u)*.8);text-align:left}
+.c{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.25em;padding-bottom:calc(var(--u)*2)}
+.c span{max-width:100%;overflow-wrap:anywhere}
+.past,.blank{min-height:calc(var(--u)*11)}
+.blank{opacity:.5}
+.e{font-size:calc(var(--u)*7.5);line-height:1.1}
+.free{background:var(--free);color:var(--accent)}
+.free .n{color:var(--ink)}
+.busy{background:color-mix(in srgb,var(--busy) 20%,var(--cell));color:var(--busy);font-size:calc(var(--u)*2.8)}
+.busy .n{color:var(--busy)}
+.blackout{background:#000;color:#fff;letter-spacing:.12em;font-weight:800}
+.blackout .c{gap:.1em}
+.blackout .n{color:#555;letter-spacing:0}
+.maybe{background:color-mix(in srgb,var(--maybe) 16%,var(--cell));color:var(--maybe);font-style:italic;font-size:calc(var(--u)*2.8);box-shadow:inset 0 0 0 1.5px var(--cell),inset 0 0 0 2.5px color-mix(in srgb,var(--maybe) 60%,transparent)}
+.maybe .n{color:var(--maybe);font-style:normal}
+
+:root{--bg:#eef3fb;--cell:#ffffff;--ink:#1c2a44;--muted:#7f8ca6;--line:#d3ddec;--accent:#2a5db0;--free:#dbe8fb;--busy:#c8483c;--maybe:#b07d12;
+--display:'Fredoka',system-ui,sans-serif;--body:'Nunito',system-ui,-apple-system,sans-serif}
+body{background:var(--bg)}
+.cal{border-color:#2a5db0;box-shadow:0 10px 24px -18px rgba(28,42,68,.6)}
+h1{color:var(--accent)}
+.past{background-image:linear-gradient(to top right,transparent calc(50% - .6px),var(--line) calc(50% - .6px),var(--line) calc(50% + .6px),transparent calc(50% + .6px))}
+.past .n{opacity:.4}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>November<small>2026</small></h1>
+  <div class="holder">
+    <div class="cal"><div class="dow">S</div><div class="dow">M</div><div class="dow">T</div><div class="dow">W</div><div class="dow">T</div><div class="dow">F</div><div class="dow">S</div><div class="d past"><span class="n">1</span></div><div class="d past"><span class="n">2</span></div><div class="d past"><span class="n">3</span></div><div class="d past"><span class="n">4</span></div><div class="d past"><span class="n">5</span></div><div class="d past"><span class="n">6</span></div><div class="d past"><span class="n">7</span></div><div class="d past"><span class="n">8</span></div><div class="d past"><span class="n">9</span></div><div class="d past"><span class="n">10</span></div><div class="d past"><span class="n">11</span></div><div class="d past"><span class="n">12</span></div><div class="d past"><span class="n">13</span></div><div class="d past"><span class="n">14</span></div><div class="d past"><span class="n">15</span></div><div class="d past"><span class="n">16</span></div><div class="d past"><span class="n">17</span></div><div class="d free"><span class="n">18</span><div class="c"><span>free 7:30+</span></div></div><div class="d busy"><span class="n">19</span><div class="c"><span>Madeline</span><span>busy</span></div></div><div class="d busy"><span class="n">20</span><div class="c"><span class="e">&#127874;</span></div></div><div class="d busy"><span class="n">21</span><div class="c"><span>Madeline</span><span>busy</span></div></div><div class="d busy"><span class="n">22</span><div class="c"><span>Madeline</span><span>busy</span></div></div><div class="d free"><span class="n">23</span><div class="c"><span>free 7+</span></div></div><div class="d busy"><span class="n">24</span><div class="c"><span>confes&shy;sion</span><span>(long list)</span></div></div><div class="d blackout"><span class="n">25</span><div class="c"><span>BLACK</span><span>OUT</span></div></div><div class="d busy"><span class="n">26</span><div class="c"><span>awkward conver&shy;sations with gramps</span></div></div><div class="d maybe"><span class="n">27</span><div class="c"><span>skip&shy;pable party</span></div></div><div class="d free"><span class="n">28</span><div class="c"><span>free</span></div></div><div class="d free"><span class="n">29</span><div class="c"><span>free</span></div></div><div class="d free"><span class="n">30</span><div class="c"><span>free</span></div></div><div class="d blank"></div><div class="d blank"></div><div class="d blank"></div><div class="d blank"></div><div class="d blank"></div></div>
+  </div>
+</div>
+</body>
+</html>
